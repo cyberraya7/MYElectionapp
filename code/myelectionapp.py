@@ -39,7 +39,7 @@ def load_data_dun():
 df_parlimen = load_data_parlimen()
 df_dun = load_data_dun()
 
-st.title(f"MY Election APP")
+st.title(f"My Politiko")
 
 if selected == "Parlimen":
     
