@@ -21,7 +21,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 selected = option_menu(
     menu_title=None,
     options=["Parlimen", "DUN"],
-    icons=["bi-bank", "b-home"],  # https://icons.getbootstrap.com/
+    icons=["bi-bank", "b-house"],  # https://icons.getbootstrap.com/
     orientation="horizontal",
 )
 
