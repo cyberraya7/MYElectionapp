@@ -4,6 +4,19 @@ import streamlit as st
 import altair as alt
 from streamlit_option_menu import option_menu
 
+
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+
+
+
 # --- NAVIGATION MENU ---
 selected = option_menu(
     menu_title=None,
