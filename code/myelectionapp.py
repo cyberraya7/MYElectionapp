@@ -27,27 +27,27 @@ selected = option_menu(
 
 @st.cache_data(persist=True)
 def load_data_parlimen():
-    df = pd.read_csv('/Users/mannitor/Documents/VScode/pru15_result_parlimen.csv')
+    df = pd.read_csv('data/pru15_result_parlimen.csv')
     df.drop(['Unnamed: 0'], axis=1, inplace=True)
     return df
 
 def load_data_dun():
-    df = pd.read_csv('/Users/mannitor/Documents/VScode/prn-2018.csv')
+    df = pd.read_csv('data/prn-2018.csv')
     df.drop(['Unnamed: 0'], axis=1, inplace=True)
     return df
 
 def load_data_ahli_parlimen():
-    df = pd.read_csv('/Users/mannitor/Documents/VScode/Ahli_Parlimen_15.csv')
+    df = pd.read_csv('data/Ahli_Parlimen_15.csv')
     df.drop(['Unnamed: 0'], axis=1, inplace=True)
     return df
 
 def load_data_parlimen_history():
-    df = pd.read_csv('/Users/mannitor/Documents/VScode/parlimen_historical_data.csv')
+    df = pd.read_csv('data/parlimen_historical_data.csv')
     #df.drop(['Unnamed: 0'], axis=1, inplace=True)
     return df
 
 def load_data_dun_history():
-    df = pd.read_csv('/Users/mannitor/Documents/VScode/dun_historical_data.csv')
+    df = pd.read_csv('data/dun_historical_data.csv')
     #df.drop(['Unnamed: 0'], axis=1, inplace=True)
     return df
 
