@@ -20,7 +20,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 # --- NAVIGATION MENU ---
 selected = option_menu(
     menu_title=None,
-    options=["PRU15-PARLIMEN", "PRN14-DUN", "AHLI PARLIMEN", "PRU-HistoricalData", "PRN-HistoricalData"],
+    options=["PRU15-PARLIMEN", "PRN14-DUN", "AHLI PARLIMEN", "PRU-Arkib Data", "PRN-Arkib Data"],
     icons=["bi-bank", "bi-house", "bar-chart-fill", "bi-clock-history", "bi-clock-history"],  # https://icons.getbootstrap.com/
     orientation="horizontal",
 )
@@ -212,7 +212,7 @@ if selected == "AHLI PARLIMEN":
 
     # st.altair_chart(f, use_container_width=True, theme="streamlit")
 
-if selected == "PRU-HistoricalData":
+if selected == "PRU-Arkib Data":
     
     st.markdown('### Keputusan PRU 2004-2018')
     parlimen_hist_year = list(df_parlimen_hist['Tahun'].drop_duplicates())
@@ -273,7 +273,7 @@ if selected == "PRU-HistoricalData":
 
     st.altair_chart(f, use_container_width=True, theme="streamlit")
 
-if selected == "PRN-HistoricalData":
+if selected == "PRN-Arkib Data":
     
     st.markdown('### Keputusan PRN 2004-2018')
     dun_hist_year = list(df_dun_hist['Tahun'].drop_duplicates())
