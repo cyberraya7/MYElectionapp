@@ -192,7 +192,7 @@ if selected == "AHLI PARLIMEN":
         df_ahli['Parti'].isin(ahli_parti_name_choice)
     ]
 
-    st.markdown('### Keputusan PRN 14')
+    #st.markdown('### Keputusan PRN 14')
 
     
     # text_nama = df_ahli_filtered['Yang Berhormat'].tolist()[0]
