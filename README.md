@@ -1,2 +1,2 @@
 # MYElectionapp
-PRU15 and PRN14 Analytics App
+Pilihanraya Umum Dan Negeri Analytics App
